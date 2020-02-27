@@ -1,9 +1,11 @@
 import React from 'react'
+import {StyledDisplay} from './styles/StyledDisplay'
 
-export default function Display({gameOver, text}) {
+const Display = ({gameOver, text}) => {
     return (
-        <div>
+        <StyledDisplay gameOver={gameOver}>
             {text}
-        </div>
+        </StyledDisplay>
     )
 }
+export default Display;
